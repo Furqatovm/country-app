@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 0.5s;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Philosopher", sans-serif;
 }
 
 :root{
@@ -12,7 +12,7 @@
     --lightbackground-main-color: #fafafa;
     --header-light-box-shadow: 2px 3px 10px rgba(211, 211, 211, 0.789);
     --light-mode-theme-color:#656565;
-    --option-light-background-color: #fff;
+    --option-light-background-color: #fafafa;
     --input-borderradius: 5px;
     --inputlightcolor:#8e8e8e;
     --inputfonsize: 1rem;
@@ -20,10 +20,10 @@
     --card-matn-color:#6b6b6b;
     --input-dark-color:#d1dae3;
     --sarlavhalardarkColor:#d1dae3;
-    --header-dark-color:#2b3743;
+    --header-dark-color:hsl(209, 23%, 22%);
     --maindarkcolor:#202d36;
     --input-dark-bgcolor:#2b3743;
-    --dark-box-shadow: 2px 3px solid gray;
+    --dark-box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.268);
 }
 .container{
     max-width: 1250px;
@@ -150,7 +150,7 @@ form{
 
 .flag-matn{
     font-weight: 500;
-    color: var(--card-matn-color);
+    color: var(--main-sarlavha-color);
 }
 
 .flag-span{
@@ -168,18 +168,23 @@ form{
 main{
     box-shadow: var(--header-light-box-shadow);
 }
+
+
+
 #changetheme{
     padding: 0;
     border: none;
     background-color: transparent;
 }
 
-
 .darkMode header{
     background-color: var(--header-dark-color);
     box-shadow: var(--dark-box-shadow);
 }
-.darkMode h1, h2, h3{
+.darkMode h1{
+    color: var(--sarlavhalardarkColor);
+}
+.darkMode .flag-sarlavha{
     color: var(--sarlavhalardarkColor);
 }
 
